@@ -25,6 +25,11 @@ public:
   */
   Eigen::MatrixXd CalculateJacobian(const Eigen::VectorXd& x_state);
 
+  /**
+  * A helper method to subtract 2 angles and normalize the result between -PI, PI
+  */
+  double SubtractAngles(double a, double b);
+
 };
 
 #endif /* TOOLS_H_ */
